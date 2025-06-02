@@ -1,3 +1,4 @@
+<!-- Blog Page HTML here -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,7 +113,7 @@
     }
 
     .blog-post:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
     }
 
     .blog-post img {
@@ -155,6 +156,12 @@
         transform: translateY(0);
       }
     }
+
+    @media screen and (min-width: 1024px) {
+      .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   </style>
 </head>
 <body>
@@ -171,7 +178,7 @@
 
   <div class="blog-container">
     <div class="blog-header-container">
-      <div class="blog-header"><strong>My Blogs</strong></div>
+      <div class="blog-header">My Blogs</div>
       <div class="search-bar">
         <input type="text" placeholder="Search blog..." onkeyup="searchBlog(this.value)" />
       </div>
