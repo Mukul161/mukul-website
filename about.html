@@ -1,1 +1,232 @@
 <!-- About Page HTML here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Mukul Raj Mishra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --color1: #001845;
+      --color2: #002855;
+      --color3: #023e7d;
+      --color4: #0466c8;
+      --color5: #7d8597;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--color1);
+      color: white;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: var(--color2);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+    }
+
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .about-header {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      color: var(--color4);
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .bio-section {
+      flex: 1;
+      margin-right: 2rem;
+    }
+
+    .bio-section h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .bio-section h3 {
+      font-size: 1rem;
+      color: var(--color5);
+      margin-bottom: 1rem;
+    }
+
+    .bio-section p {
+      max-width: 600px;
+    }
+
+    .bio-info {
+      display: flex;
+      flex-direction: row;
+      margin-top: 2rem;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .bio-info div {
+      font-size: 0.9rem;
+    }
+
+    .bio-info label {
+      font-weight: bold;
+      display: block;
+    }
+
+    .read-more {
+      margin-top: 2rem;
+      display: inline-block;
+      background-color: var(--color4);
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .resume-section {
+      margin-top: 3rem;
+      display: none;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .resume-section h3 {
+      margin-top: 1rem;
+      color: var(--color4);
+      font-size: 1.5rem;
+      border-bottom: 1px solid var(--color5);
+      padding-bottom: 0.5rem;
+    }
+
+    .resume-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .resume-section li {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: var(--color2);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-weight: bold; font-size: 1.2rem">Mukul Raj Mishra</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="calculator.html">Calculator</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="about-container">
+        <div class="about-content">
+      <div class="bio-section">
+        <h1>Mukul Mishra</h1>
+        <h3>CFA</h3>
+        <p>
+          Mukul Mishra is a finance professional specializing in Investment Banking and Private Equity. He helps clients with financial planning, investment strategies in stock market and mutual funds, and achieving long-term financial security. Passionate about empowering others through financial literacy.
+        </p>
+        <a class="read-more" onclick="document.getElementById('resumeSection').style.display='block'; this.style.display='none';">Read More</a>
+
+        <div class="bio-info">
+          <div>
+            <label>AGE</label>
+            30
+          </div>
+          <div>
+            <label>BORN IN</label>
+            NY
+          </div>
+          <div>
+            <label>MAIL</label>
+            mukul.mishra@email.com
+          </div>
+          <div>
+            <label>PHONE</label>
+            +15551234567
+          </div>
+        </div>
+
+        <div class="resume-section" id="resumeSection">
+          <h3>Work Experience</h3>
+          <ul>
+            <li><strong>Analyst – Deloitte</strong> (9 months)<br>Worked on Financial Planning & Analysis for Dell using Oracle EPBCS. Developed integrated pipelines and business dashboards.</li>
+            <li><strong>Intern – XYZ Capital</strong><br>Assisted in deal screening and pitchbook preparation for mid-market PE transactions.</li>
+          </ul>
+
+          <h3>Education</h3>
+          <ul>
+            <li><strong>MSc Finance – Warwick Business School (2025)</strong><br>
+              Specialized in Corporate Finance, Investment Banking, and Private Equity. Participated in financial modelling workshops and led a team project on portfolio optimization.
+            </li>
+            <li><strong>Integrated MSc Mathematics – NIT Surat</strong><br>
+              Completed a rigorous five-year program with strong foundations in statistics, linear algebra, and numerical analysis. Published a research project on quantitative finance applications.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Mukul Raj Mishra. All rights reserved.
+  </footer>
+</body>
+</html>
