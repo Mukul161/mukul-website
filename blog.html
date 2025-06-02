@@ -45,11 +45,28 @@
       z-index: 1000;
     }
 
+    .home-link {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .home-link:hover {
+      color: var(--color4);
+    }
+
     header nav a {
       margin-left: 1.5rem;
       text-decoration: none;
       color: white;
       font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: var(--color4);
     }
 
     .blog-container {
@@ -180,6 +197,13 @@
         <div class="blog-content">
           <div class="blog-category">Equity</div>
           <div class="blog-title">Stock Navigator</div>
+        </div>
+      </div>
+      <div class="blog-post" onclick="location.href='blog4.html'">
+        <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=800&q=60" alt="Mutual Funds Explained" />
+        <div class="blog-content">
+          <div class="blog-category">Mutual Funds</div>
+          <div class="blog-title">Mutual Funds Explained</div>
         </div>
       </div>
     </div>
