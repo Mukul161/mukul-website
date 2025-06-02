@@ -44,14 +44,26 @@
       top: 0;
       z-index: 1000;
     }
+    .home-link {
+       font-weight: bold;
+       font-size: 1.2rem;
+       color: white;
+       text-decoration: none;
+       transition: color 0.3s ease;
+    }
 
+    .home-link:hover {
+       color: var(--color4);
+    }
     header nav a {
       margin-left: 1.5rem;
       text-decoration: none;
       color: white;
       font-weight: 600;
     }
-
+    header nav a:hover {
+      color: var(--color4);
+    }
     .blog-content-container {
       flex: 1;
       max-width: 800px;
@@ -95,9 +107,8 @@
 </head>
 <body>
   <header>
-    <div style="font-weight: bold; font-size: 1.2rem">Mukul Raj Mishra</div>
+    <a href="index.html" class="home-link">Mukul Raj Mishra</a>
     <nav>
-      <a href="index.html">Home</a>
       <a href="about.html">About Me</a>
       <a href="services.html">Services</a>
       <a href="blog.html">Blog</a>
