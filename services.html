@@ -1,1 +1,238 @@
 <!-- Services Page HTML here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | Mukul Raj Mishra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --color1: #001845;
+      --color2: #002855;
+      --color3: #023e7d;
+      --color4: #0466c8;
+      --color5: #7d8597;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--color1);
+      color: white;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: var(--color2);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+    }
+
+    .services-container {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background-color: var(--color2);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .service-number {
+      color: var(--color4);
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    .service-card h3 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .service-card p {
+      color: white;
+    }
+
+    .testimonial-section {
+      margin-top: 4rem;
+      padding: 2rem;
+      background-color: var(--color3);
+      overflow: hidden;
+    }
+
+    .testimonial-section h2 {
+      text-align: center;
+      color: var(--color4);
+      margin-bottom: 2rem;
+    }
+
+    .testimonial-slider-wrapper {
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+
+    .testimonial-slider {
+      display: flex;
+      gap: 1rem;
+      width: fit-content;
+    }
+
+    .testimonial-card {
+      background-color: var(--color2);
+      border-radius: 10px;
+      padding: 1rem;
+      width: 200px;
+      height: 150px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .testimonial-card h4 {
+      margin-bottom: 0.5rem;
+      color: var(--color4);
+    }
+
+    footer {
+      background-color: var(--color2);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-weight: bold; font-size: 1.2rem">Mukul Raj Mishra</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="calculator.html">Calculator</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="services-container">
+    <h2 style="text-align:center; color: var(--color4); font-size: 2rem; margin-bottom: 2rem;">Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="service-number">01</div>
+        <h3>Plan Wealth</h3>
+        <p>Personalized financial planning to achieve your goals. Investment strategies tailored to your risk tolerance and financial situation.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-number">02</div>
+        <h3>Portfolio Build</h3>
+        <p>Strategic advice for building a diversified portfolio. Maximize returns while managing risk in the dynamic market.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-number">03</div>
+        <h3>Stock Trade</h3>
+        <p>Expert guidance in navigating the complexities of the stock market. Maximize returns and minimize risks with informed decisions.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial-section">
+    <h2>Testimonials</h2>
+    <div class="testimonial-slider-wrapper" id="testimonialWrapperServices">
+      <div class="testimonial-slider" id="testimonialSliderServices">
+        <div class="testimonial-card"><h4>Aarav S.</h4><p>“Mukul’s financial strategies helped me plan my investments more effectively.”</p></div>
+        <div class="testimonial-card"><h4>Sneha T.</h4><p>“The clarity he brought to my portfolio has been a game-changer.”</p></div>
+        <div class="testimonial-card"><h4>Rohit V.</h4><p>“Very professional and insightful. I highly recommend his services.”</p></div>
+        <div class="testimonial-card"><h4>Divya M.</h4><p>“My mutual fund choices are now backed by logic and strategy.”</p></div>
+        <div class="testimonial-card"><h4>Karan P.</h4><p>“Mukul's equity strategy gave me confidence in volatile markets.”</p></div>
+        <div class="testimonial-card"><h4>Neha R.</h4><p>“A must-consult for anyone seeking private equity insights.”</p></div>
+        <div class="testimonial-card"><h4>Ramesh K.</h4><p>“I saw real results within months of following Mukul’s advice.”</p></div>
+        <div class="testimonial-card"><h4>Priya B.</h4><p>“His approach is structured, smart, and well-executed.”</p></div>
+        <div class="testimonial-card"><h4>Ankit J.</h4><p>“Clear insights and friendly communication. Loved the experience.”</p></div>
+        <div class="testimonial-card"><h4>Megha S.</h4><p>“I was new to finance. Mukul made it simple and impactful.”</p></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Mukul Raj Mishra. All rights reserved.
+  </footer>
+
+  <script>
+    const testimonialWrapperServices = document.getElementById('testimonialWrapperServices');
+    const testimonialSliderServices = document.getElementById('testimonialSliderServices');
+    let scrollDirectionServices = 1;
+    let isHoveredServices = false;
+
+    function autoScrollTestimonials() {
+      const maxScroll = testimonialSliderServices.scrollWidth - testimonialWrapperServices.clientWidth;
+      const currentScroll = testimonialWrapperServices.scrollLeft;
+      const rightTrigger = maxScroll * 0.75;
+      const leftTrigger = maxScroll * 0.25;
+
+      if (!isHoveredServices) {
+        if (currentScroll >= rightTrigger) {
+          scrollDirectionServices = -1;
+        } else if (currentScroll <= leftTrigger) {
+          scrollDirectionServices = 1;
+        }
+        testimonialWrapperServices.scrollLeft += scrollDirectionServices * 1.25;
+      }
+    }
+
+    setInterval(autoScrollTestimonials, 20);
+
+    testimonialSliderServices.addEventListener('mouseover', () => { isHoveredServices = true; });
+    testimonialSliderServices.addEventListener('mouseout', () => { isHoveredServices = false; });
+  </script>
+</body>
+</html>
