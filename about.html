@@ -21,11 +21,17 @@
       font-family: 'Inter', sans-serif;
     }
 
+    html, body {
+      height: 100%;
+    }
+
     body {
       background-color: var(--color1);
       color: white;
       line-height: 1.6;
       overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
@@ -39,16 +45,8 @@
       z-index: 1000;
     }
 
-    .home-link {
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: white;
-      text-decoration: none;
+    header nav a, header div {
       transition: color 0.3s ease;
-    }
-
-    .home-link:hover {
-      color: var(--color4);
     }
 
     header nav a {
@@ -56,10 +54,9 @@
       text-decoration: none;
       color: white;
       font-weight: 600;
-      transition: color 0.3s ease;
     }
 
-    header nav a:hover {
+    header nav a:hover, header div:hover {
       color: var(--color4);
     }
 
@@ -70,6 +67,7 @@
       max-width: 1200px;
       margin: auto;
       animation: fadeIn 1.5s ease-in-out;
+      flex: 1;
     }
 
     .about-header {
@@ -181,7 +179,7 @@
 </head>
 <body>
   <header>
-    <a href="index.html" class="home-link">Mukul Raj Mishra</a>
+    <div style="font-weight: bold; font-size: 1.2rem">Mukul Raj Mishra</div>
     <nav>
       <a href="about.html">About Me</a>
       <a href="services.html">Services</a>
