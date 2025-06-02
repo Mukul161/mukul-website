@@ -1,1 +1,128 @@
-<!-- Blog2 HTML here -->
+<!-- Blog1 HTML here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wealth Builder | Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color1: #0f0f0f;
+      --color2: #1a1a1a;
+      --color3: #333333;
+      --color4: #4d4dff;
+      --color5: #b3b3b3;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: var(--color1);
+      color: white;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--color2);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+    }
+
+    .blog-content-container {
+      flex: 1;
+      max-width: 800px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+
+    .blog-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--color4);
+      margin-bottom: 1rem;
+    }
+
+    .blog-date {
+      font-size: 0.9rem;
+      color: var(--color5);
+      margin-bottom: 2rem;
+    }
+
+    .blog-body p {
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      background-color: var(--color2);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-weight: bold; font-size: 1.2rem">Mukul Raj Mishra</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="calculator.html">Calculator</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="blog-content-container">
+    <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=800&q=60" alt="Fixed Income" class="blog-image">
+    <div class="blog-title">Fixed Income</div>
+    <div class="blog-date">Published on June 1, 2025</div>
+    <div class="blog-body">
+      <p>Wealth building is a journey that combines smart financial planning, disciplined saving, and strategic investing. The earlier you begin, the more you benefit from the power of compounding and long-term returns.</p>
+
+      <p>Start by setting clear financial goals—whether it's early retirement, buying a home, or building an emergency fund. Once your goals are defined, create a budget that allows you to save consistently while avoiding unnecessary debt.</p>
+
+      <p>Invest in a mix of asset classes such as equities, bonds, and mutual funds. Diversification minimizes risk and maximizes the potential for returns. Regularly review your portfolio and adjust based on market performance and personal milestones.</p>
+
+      <p>Wealth is not built overnight. It is the result of small, intentional decisions made consistently over time. Stay informed, stay disciplined, and trust the process.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Mukul Raj Mishra. All rights reserved.
+  </footer>
+</body>
+</html>
